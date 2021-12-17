@@ -1,0 +1,147 @@
+.section1{
+    // background-image: url(/images/tuman-down.png);
+    .bg-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-size: cover;
+    }
+
+    .img-pos{
+
+        .car{
+            width: 800px;
+            position: absolute;
+            top: 66%;
+            left: 18%;
+        }
+
+        .shadow{
+            position: absolute;
+            top: 112%;
+            left: 15%;
+        }
+
+    }
+
+    header{
+        @include display();
+        justify-content: space-between;
+        
+        .menu{
+            @include display(59px);
+            position: relative;
+
+            .red{
+                @include center();
+                top: 8%;
+                left: 10%;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: #FF0000;
+            }
+        }
+
+        .icons{
+            @include display(20px);
+            position: relative;
+
+            .red{
+                @include center();
+                top: 25%;
+                left: 25%;
+                width: 12px;
+                height: 12px;
+                background: #FF0000;
+                border-radius: 50%;
+                color: $asosiyrang;
+                font-size: 8px;
+                line-height: 10px;
+                padding: 1.5px 3.5px;
+            }
+
+            span{
+                color: $asosiyrang;
+            }
+        }
+    }//header
+    
+        .chevrolet{
+            @include display(50px);
+            padding: 86px 0 28px 0;
+            position: relative;
+            top: 10%;
+            left: 40%;
+            transform: translate(-28%, -5%);
+
+            h1{
+                font-weight: 600;
+                font-size: 60px;
+                line-height: 100px;
+                color: $asosiyrang;
+            }
+
+            .red-div{
+                width: 436.81px;
+                height: 128.86px;
+                background: #FF0000;
+                clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+
+                span{
+                    font-weight:700;
+                    font-size: 60px;
+                    line-height: 120px;
+                    color: $asosiyrang;
+                    padding-left: 75px;
+                }
+            }
+        }
+
+        p{
+            color: $asosiyrang;
+            text-align: center;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        .car-div{
+            @include display();
+            justify-content: space-between;
+
+            .num{
+                @include display(5px);
+                flex-direction: column;
+                margin-top: 88px;
+
+                span{
+                    color: $asosiyrang;
+                }
+
+                .box{
+                    width: 15.1px;
+                    height: 15.1px;
+                    border: 1px solid $greyrang;
+                    border-radius: 50%;
+                    position: relative;
+
+                    .box-two{
+                        width: 7.31px;
+                        height: 7.31px;
+                        background: $greyrang;
+                        border-radius: 10px;
+                        @include center(); 
+                    }
+                }
+            }//num
+
+            .menu-right{
+                @include display(35px);
+                flex-direction: column;
+                margin-top: 74px;
+            }
+            
+        }//car-div
+}
